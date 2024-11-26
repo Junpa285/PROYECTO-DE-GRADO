@@ -1,0 +1,80 @@
+/* Reset de estilos predeterminados para asegurarnos de que todo se vea de la misma manera en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo de la página */
+body {
+    background-color: #f4f7fa; /* Color suave para el fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Contenedor principal */
+.cont_cargo {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff; /* Azul atractivo */
+}
+
+/* Estilo de los botones */
+.btn_cargo {
+    background-color: #007bff; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn_cargo:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto sutil de levantar el botón */
+}
+
+/* Efecto cuando el botón es presionado */
+.btn_cargo:active {
+    transform: translateY(2px); /* Efecto de hundir el botón al presionar */
+}
+
+/* Espaciado adicional para los botones */
+br {
+    margin-bottom: 10px;
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 480px) {
+    .cont_cargo {
+        padding: 20px;
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn_cargo {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe Asignación - Gestión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Informe de Asignación</h1>
+        <p>Seleccione el rango de fechas para generar el informe de asignación de herramientas.</p>
+        <form action="generate_report.php" method="post">
+            <label for="start-date">Fecha de inicio</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">Fecha de fin</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <button class="btn_perfil" type="submit">Generar Informe</button>
+        </form>
+    </div>
+</body>
+</html>

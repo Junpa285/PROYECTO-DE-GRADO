@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>REINTECH-TOOLSQL-LOGIN</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="cont_login">
+        <h4>Ingrese sus credenciales</h4>
+        <br>
+        <label id="lbl_btn_cargo"></label>
+        <br>
+        <input type="text" name="usuario" class="txt_login">
+        <br>
+        <input type="password" name="clave" class="txt_login">
+        <br>
+        <button class="btn_cargo" name="inicio" onclick="iniciarSesion()">Iniciar Sesion</button>
+        <br>
+    </div>
+    <div class="cont_cargo">
+        <h5>¿No eres usuario?</h5>
+        <button class="btn_cargo" name="registrate" onclick="window.location.href='registro.html'">Registrate</button>
+        <h5>¿Olvido su contraseña?</h5>
+        <button class="btn_cargo" name="restablecer" onclick="window.location.href='restaura.html'">Restablecer</button>        
+    </div>        
+</body>

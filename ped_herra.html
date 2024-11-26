@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Herramienta - Gestión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedido de Herramienta</h1>
+        <p>Complete el siguiente formulario para realizar el pedido de una nueva herramienta.</p>
+        <form action="submit_order.php" method="post">
+            <label for="tool-name">Nombre de la herramienta</label>
+            <input type="text" id="tool-name" name="tool-name" required>
+
+            <label for="reason">Justificación del pedido</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+
+            <button class="btn_perfil" type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+</body>
+</html>

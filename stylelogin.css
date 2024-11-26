@@ -1,0 +1,108 @@
+/* Reset de estilos predeterminados para asegurarnos de que todo se vea de la misma manera en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo de la página */
+body {
+    background-color: #f4f7fa; /* Color suave para el fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Contenedor principal para el login */
+.cont_login {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título */
+h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #007bff; /* Azul atractivo */
+}
+
+/* Estilo del label que muestra el cargo */
+#lbl_btn_cargo {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Estilo de los inputs (usuario y clave) */
+.txt_login {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Efecto cuando el input recibe el foco */
+.txt_login:focus {
+    border-color: #007bff; /* Azul al hacer foco */
+    outline: none; /* Elimina el borde por defecto */
+}
+
+/* Estilo del botón */
+.btn_cargo {
+    background-color: #007bff; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto hover en el botón */
+.btn_cargo:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto sutil de levantar el botón */
+}
+
+/* Efecto cuando el botón es presionado */
+.btn_cargo:active {
+    transform: translateY(2px); /* Efecto de hundir el botón al presionar */
+}
+
+/* Contenedor de los links de registro y restablecimiento */
+.cont_cargo h5 {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .cont_login {
+        padding: 20px;
+        max-width: 350px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .btn_cargo {
+        font-size: 14px;
+    }
+}
